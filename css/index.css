@@ -1,3 +1,292 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday  and start to refactor into flexbox */
+
+/* responsive design stretch goal, removes mobile logo */
+.mobileLogo {
+	display: none;
+}
+/* stretch goal end */
+
+/* css tools start */
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+
+/* set elements to flex with this class */
+.flexContainer {
+	display: flex;
+}
+
+/* set page width */
+.maxWidth {
+	max-width: 80%;
+	margin: auto;
+	position: relative;
+}
+
+/* make buttons */
+.button button {
+	width: 205px;
+	height: 40px;
+	font-size: 18px;
+	border: 1px solid black;
+	background-color: white;
+}
+
+/* set banner image widths */
+.bannerImg {
+	width: 100%;
+}
+/* css tools end */
+
+
+
+/* sitewide navigation styles begin */
+.navBar {
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 0 5%;
+	background-color: white;
+	z-index: 999;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	align-self: center;
+	margin-left: 8%;
+}
+
+.navBar a {
+	text-decoration: none;
+	color: grey;
+}
+
+nav a:hover {
+	color: black;
+}
+/* navigation styles end */
+
+
+
+/* header styles start */
+
+/* all pages styles start */
+header {
+	margin-top: 100px;
+	padding-bottom: 6%;
+	margin-bottom: 6%;
+	border-bottom: 2px solid grey;
+	justify-content: space-around;
+}
+/* all pages styles end */
+
+/* index.html header styles begin */
+.headerImage {
+	align-self: center;
+	width: 20vw;
+}
+.headerImage img {
+	width: 100%;
+}
+
+.titleAndButtton {
+	align-self: center;
+	flex-direction: column;
+	align-items: center;
+	width: 20vw;
+}
+
+.siteTitle {
+	font-size: 4.688vw;
+	text-align: center;
+}
+/* index.html header styles end */
+
+/* services.html styles start */
+.servicesHeaderImg {
+	margin: 0 0 6%;
+}
+/* services.html styles end */
+
+/* header styles end */
+
+
+
+/* main content styles start */
+
+/* index.html  styles start */
+.topContent {
+	margin: 6% 0 6%;
+	justify-content: space-between;
+}
+
+.topLeft {
+	width: 47%;
+	margin-right: 5%;
+}
+
+.topRight {
+	width: 47%;
+}
+
+.bottomContent {
+	margin: 6% 0 0;
+}
+
+.bottomLeft {
+	width: 32%;
+	margin-right: 1.3%;
+}
+
+.bottomCenter {
+	width: 32%;
+	margin-right: 1.3%;
+
+}
+
+.bottomRight {
+	width: 32%;
+}
+/* index.html styles end */
+
+/* services.html styles start */
+.servicesRowContainer {
+	justify-content: space-between;
+}
+
+.servicesRowItem {
+	background-color: #F4F3F4;
+	width: 47%;
+	padding: 3%;
+	border: 1px solid black;
+	flex-direction: column;
+}
+
+.servicesRowMiddle {
+	margin: 6% 0 6%;
+}
+
+.servicesLearnMore {
+	margin-top: 12%;
+}
+
+.servicesLearnMore button {
+	border-radius: 5px;
+}
+/* services.html styles end */
+
+/* main content styles end */
+
+
+
+/* footer styles start */
+
+/* all pages styles start */
+footer {
+	border-top: 2px solid grey;
+	padding-top: 6%;
+	margin-top: 6%;
+}
+
+.copyright {
+	text-align: center;
+	margin: 12% 0 12%;
+}
+
+.copyright small {
+	font-family: 'PT Mono', monospace;
+}
+/* all pages styles end */
+
+/* services.html styls start */
+.servicesInfo {
+	justify-content: space-between;
+}
+
+.servicesInfoImg {
+	align-self: center;
+	width: 47%
+}
+
+.servicesFootercolumn {
+	width: 47%;
+}
+.servicesFooterUL {
+	list-style-type: square;
+	list-style-position: inside;
+	margin-top: 7%;
+}
+.servicesFooterUL li {
+	margin-bottom: 6%;
+}
+/* services.html styles end */
+
+/* footer styles end */
 
 
