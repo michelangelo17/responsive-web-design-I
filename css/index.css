@@ -81,18 +81,17 @@ h1, h2, h3, h4, h5 {
 
 /* set page width */
 .maxWidth {
-	max-width: 80%;
+	width: 90%;
 	margin: auto;
-	position: relative;
+  position: relative;
 }
 
 /* make buttons */
 .button button {
-	width: 205px;
-	height: 40px;
-	font-size: 18px;
+	font-size: 3vw;
 	border: 1px solid black;
-	background-color: white;
+  background-color: white;
+  white-space: nowrap;
 }
 
 /* set banner image widths */
@@ -107,19 +106,22 @@ h1, h2, h3, h4, h5 {
 .navBar {
 	position: fixed;
 	height: 100px;
-	width: 100%;
-	top: 0;
-	left: 0;
-	padding: 0 5%;
+	width: 91%;
+  margin: auto;
+  top: 0;
 	background-color: white;
 	z-index: 999;
 	align-items: center;
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .logo {
 	align-self: center;
-	margin-left: 8%;
+}
+
+.navLinks {
+  width: 70%;
+  justify-content: space-between;
 }
 
 .navBar a {
@@ -138,7 +140,7 @@ nav a:hover {
 
 /* all pages styles start */
 header {
-	margin-top: 100px;
+	margin-top: 150px;
 	padding-bottom: 6%;
 	margin-bottom: 6%;
 	border-bottom: 2px solid grey;
@@ -149,22 +151,26 @@ header {
 /* index.html header styles begin */
 .headerImage {
 	align-self: center;
-	width: 20vw;
+	width: 30vw;
 }
 .headerImage img {
 	width: 100%;
 }
 
 .titleAndButtton {
-	align-self: center;
 	flex-direction: column;
-	align-items: center;
-	width: 20vw;
+	justify-content: center;
+	width: 30vw;
 }
 
 .siteTitle {
-	font-size: 4.688vw;
+	font-size: 7vw;
 	text-align: center;
+}
+
+.indexButton {
+  width: 100%;
+  text-align: center;
 }
 /* index.html header styles end */
 
