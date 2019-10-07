@@ -417,9 +417,26 @@ footer {
   .bottomRight {
     width: 100%;
   }
+  .servicesRowContainer {
+    flex-direction: column;
+  }
+  .servicesRowMiddle {
+    margin: 0;
+  }
+  .servicesRowItem {
+    width: 100%;
+    border: none;
+    margin: 0 0 5%;
+  }
   footer {
     margin-top: 50px;
     padding-top: 50px;
+  }
+  .servicesInfoImg {
+    display: none;
+  }
+  .servicesFootercolumn {
+    width: 100%;
   }
   .copyright {
     margin-top: 20%;
