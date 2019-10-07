@@ -296,11 +296,10 @@ footer {
 /* footer styles end */
 
 
+
 /* tablet styles start */
 
 @media (max-width: 800px) {
-  body {
-    background-color: blue;
-  }
+  
 }
 /* tablet styles end */
