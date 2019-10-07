@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5 {
 /* stretch goal end */
 
 /* css tools start */
-@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
 
 /* set elements to flex with this class */
 .flexContainer {
@@ -143,7 +142,7 @@ header {
 	margin-top: 150px;
 	padding-bottom: 6%;
 	margin-bottom: 6%;
-	border-bottom: 2px solid grey;
+	border-bottom: 2px solid black;
 	justify-content: space-around;
 }
 /* all pages styles end */
@@ -255,7 +254,7 @@ header {
 
 /* all pages styles start */
 footer {
-	border-top: 2px solid grey;
+	border-top: 2px solid black;
 	padding-top: 6%;
 	margin-top: 6%;
 }
@@ -265,9 +264,6 @@ footer {
 	margin: 12% 0 12%;
 }
 
-.copyright small {
-	font-family: 'PT Mono', monospace;
-}
 /* all pages styles end */
 
 /* services.html styls start */
@@ -296,9 +292,9 @@ footer {
 /* footer styles end */
 
 
+/* responsive design styles */
 
 /* tablet styles start */
-
 @media (max-width: 800px) {
   .navBar {
     flex-direction: column-reverse;
@@ -347,3 +343,87 @@ footer {
   }
 }
 /* tablet styles end */
+
+/* mobile styles start */
+@media (max-width: 500px) {
+  .maxWidth {
+    width: 100%;
+  }
+  .mobileMaxWidth {
+    margin: auto;
+    width: 95%;
+  }
+  .navBar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .logo {
+    padding-bottom: 10px;
+  }
+  .navLinks {
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+  }
+  .navLink {
+    border-top: 1px solid grey; 
+    padding: 10px 0;
+  }
+  header {
+    margin: 25px 0 50px;
+    padding-bottom: 50px;
+  }
+  .titleAndButtton {
+    width: 100%;
+  }
+  .siteTitle {
+    font-size: 12vw; 
+  }
+  .button button {
+    font-size: 3vw;
+    padding: 1% 5%;
+  }
+  .topContent {
+    flex-direction: column;
+  }
+  
+  .topLeft {
+    width: 100%;
+    margin: 5% 0;
+  }
+  
+  .topRight {
+    width: 100%;
+    margin: 5% 0;
+  }
+  
+  .bottomContent {
+    flex-direction: column;
+  }
+  
+  .bottomLeft {
+    width: 100%;
+    margin: 5% 0;
+  }
+  
+  .bottomCenter {
+    width: 100%;
+    margin: 5% 0;
+  
+  }
+  
+  .bottomRight {
+    width: 100%;
+  }
+  footer {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .copyright {
+    margin-top: 20%;
+  }
+}
+
+/* mobile styles end */
