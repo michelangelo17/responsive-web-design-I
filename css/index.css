@@ -300,6 +300,50 @@ footer {
 /* tablet styles start */
 
 @media (max-width: 800px) {
+  .navBar {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 175px;
+    padding: 5% 0;
+  }
+  header {
+    margin-top: 200px; 
+  }
+  .navLinks {
+    width: 100%;
+  }
+  .logoLink {
+    text-align: center;
+  }
+  .logo {
+    width: 70%;
+  }
+  .headerImage {
+    display: none;
+  }
+  .titleAndButtton {
+    text-align: center;
+  }
+  .siteTitle {
+    font-size: 8vw; 
+  }
+  .button button {
+    font-size: 2vw;
+    padding: 2% 10%;
+  }
+  .bottomLeft {
+    width: 30%;
+    margin-right: 5.8%;
+  }
   
+  .bottomCenter {
+    width: 30%;
+    margin-right: 5.8%;
+  
+  }
+  
+  .bottomRight {
+    width: 30%;
+  }
 }
 /* tablet styles end */
