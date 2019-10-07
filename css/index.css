@@ -242,7 +242,9 @@ header {
 }
 
 .servicesLearnMore button {
-	border-radius: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 1% 5%;
 }
 /* services.html styles end */
 
